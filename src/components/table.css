@@ -1,0 +1,86 @@
+table {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    /* width: 100%; */
+    word-break: break-all;
+    box-shadow: 5px 5px 5px 5px rgb(43, 43, 43);
+    margin: 2% 0% 5% 0%;
+  }
+  
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  table th {
+    padding: 12px 0px 12px 8px;
+    text-align: center;
+    white-space: wrap;
+    min-width: max-content;
+    background-color: #373049;
+    color: white;
+  }
+
+  .resizer {
+    display: inline-block;
+    background: rgb(0, 255, 0);
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(50%);
+    z-index: 1;
+  }
+  
+  .isResizing {
+      background: red;
+    }
+
+  .bttn-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+  }
+
+  .table-bttn {
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    
+    font-size: 18px;
+    white-space: nowrap;
+    min-width: max-content;
+    color: #8354C6;
+
+    padding: 10px 40px;
+  }
+
+  .table-bttn:hover {
+    cursor: pointer;
+    background-color: #F4F4F4;
+  }
+
+  @media screen and (max-width: 1080px) {
+    .bttn-container {
+      flex-direction: column;
+    }
+    .table-bttn {
+      margin: 2% 20%;
+    }
+    .table-container {
+      width: 100vw;
+    }
+  }
