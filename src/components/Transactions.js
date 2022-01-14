@@ -12,12 +12,9 @@ function Transactions() {
         .catch((err) => console.log(err.message))
       }, [])
 
-      const INT_FORMATTER = new Intl.NumberFormat("en-us", {                                              // formatting floats in International US format (commas seperated: 1, 000, 00)
-      
-      })
+      const INT_FORMATTER = new Intl.NumberFormat("en-us")                                                             // formatting floats in International US format (commas seperated: 1, 000, 00)
     
       const transactionData = useMemo(() => [...tranxnTable], [tranxnTable])
-      const str = ['name', 'ticketref', 'traded_on', 'quantity', 'currency', 'settlement_amount']
       const transactionCol = useMemo(() => tranxnTable[0] ? Object.keys(tranxnTable[0]).filter((key) => key==='name' | key==='ticketref' | key==='traded_on' | key==='quantity' | key==='currency' | key==='settlement_amount').map((key) => {
         switch(key) {
           case 'name': return { Header: 'Name', accessor: key }
