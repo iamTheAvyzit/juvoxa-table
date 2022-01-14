@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background:linear-gradient(128deg, rgba(119, 85, 199, 1) 0%, rgba(199, 81, 190, 1) 99%);
+}
