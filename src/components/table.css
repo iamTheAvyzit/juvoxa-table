@@ -81,6 +81,10 @@ table {
       margin: 2% 20%;
     }
     .table-container {
-      width: 100vw;
+      width: 100%;
+      overflow-x: scroll;
+    }
+    tr {
+      width: 50%;
     }
   }
