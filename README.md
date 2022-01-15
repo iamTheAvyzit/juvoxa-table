@@ -1,4 +1,4 @@
-# react-table docs
+![repo-dark](https://user-images.githubusercontent.com/94052679/149610096-9e9bbdb7-2ac9-454c-88f8-d0f199062ce6.png)
 
 # Quick Features
 
